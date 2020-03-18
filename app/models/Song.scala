@@ -1,6 +1,6 @@
-package models
-
 import play.api.libs.json.OFormat
+
+package models {
 
 case class Song(
                  name: String,
@@ -18,5 +18,7 @@ object JsonFormats {
 
   implicit val feedFormat: OFormat[Feed] = Json.format[Feed]
   implicit val songFormat: OFormat[Song] = Json.format[Song]
+
+}
 
 }
