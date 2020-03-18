@@ -22,7 +22,15 @@ p {
     color: red;
     margin-left: 40px;
 }
-</style>
+
+
+div {
+    color: red;
+    margin-left: 40px;
+}
+
+
+    </style>
     <head>
         <meta charset="utf-8">
         <title>Welcome to my Music Library System</title>
@@ -45,10 +53,17 @@ p {
                     document.getElementById("demo").innerHTML = d;
             </script>
 
-        <div>
-            <a href="@routes.SongController.showSongForm()">Go to Submit Song</a>
-        </div>
+
+
+
+
 
 
     </body>
+
+    <div>
+
+        <a class = "button" href="@routes.SongController.showSongForm()"><button>Submit Song</button></a>
+
+    </div>
 </html>
