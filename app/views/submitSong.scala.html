@@ -1,0 +1,15 @@
+@(form: Form[SongInfo])(implicit messagesProvider: MessagesProvider)
+
+@main("Submit CD") {
+    <div>
+
+    @helper.form(routes.SongController.submitSong()) {
+        @helper.inputText(form("name"), 'id -> "SongName", 'class -> "InputField", '_showConstraints -> false)
+        @helper.inputText(form("Artist"), 'id -> "Artist", 'class -> "InputField", '_showConstraints -> false)
+        @helper.inputText(form("genre"), 'id -> "genre", 'class -> "InputField", '_showConstraints -> false)
+        <button type="submit">Submit Song</button>
+    }
+    </div>
+
+
+}

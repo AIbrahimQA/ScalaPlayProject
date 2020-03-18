@@ -5,6 +5,9 @@ POST        /login               controllers.LoginController.loginSubmit
 GET         /index                    controllers.LoginController.index()
 
 
+GET         /showSongForm                    controllers.SongController.showSongForm()
+POST        /submitSong                    controllers.SongController.submitSong()
+
 GET         /createperson                controllers.AppUsingMongo.create
 
 POST        /createFromJson              controllers.AppUsingMongo.createFromJson
