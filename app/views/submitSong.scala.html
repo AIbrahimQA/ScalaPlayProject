@@ -1,0 +1,37 @@
+@(form: Form[SongInfo])(implicit messagesProvider: MessagesProvider)
+
+@main("Submit CD") {
+
+
+    <style>
+            body {
+                background-color: lightblue;
+            }
+
+            h1 {
+                color: red;
+                margin-left: 100px;
+            }
+
+            div {
+                color: red;
+                margin-left: 100px;
+            }
+
+            button {
+                color: red;
+                margin-left: 100px;
+            }
+    </style>
+    <div>
+
+    @helper.form(routes.SongController.submitSong()) {
+        @helper.inputText(form("name"), 'id -> "SongName", 'class -> "InputField", '_showConstraints -> false)
+        @helper.inputText(form("Artist"), 'id -> "Artist", 'class -> "InputField", '_showConstraints -> false)
+        @helper.inputText(form("genre"), 'id -> "genre", 'class -> "InputField", '_showConstraints -> false)
+        <button type="submit">Submit Song</button>
+    }
+    </div>
+
+
+}

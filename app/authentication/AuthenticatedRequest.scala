@@ -2,7 +2,7 @@ package authentication
 
 import com.google.inject.Inject
 import models.LoginDetails
-import play.api.mvc.{ActionBuilder, ActionTransformer, AnyContent, BodyParsers, Request, Result, Results, WrappedRequest}
+import play.api.mvc._
 
 import scala.concurrent.{ExecutionContext, Future}
 
