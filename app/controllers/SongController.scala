@@ -15,8 +15,8 @@ class SongController @Inject()(cc: ControllerComponents) extends AbstractControl
   def submitSong = Action { implicit request: Request[AnyContent] =>
     SongInfo.postSong.bindFromRequest.fold({ formWithErrors =>
       BadRequest(views.html.submitSong(formWithErrors))
-    }, { cd =>
-      Ok(cd.toString())
+    }, { song =>
+      Ok(song.toString())
     })
   }
 
