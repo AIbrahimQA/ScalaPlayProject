@@ -2,6 +2,28 @@
 
 @main("Login") {
 
+    <style>
+            body {
+                background-color: lightblue;
+            }
+
+            h1 {
+                color: red;
+                margin-left: 100px;
+            }
+
+            div {
+                color: red;
+                margin-left: 100px;
+            }
+
+            button {
+                color: red;
+                margin-left: 100px;
+            }
+    </style>
+
+
     <div>
     @helper.form(routes.LoginController.loginSubmit()){
         @helper.inputText(form("username"), '_label -> "Login", '_showConstraints -> false)

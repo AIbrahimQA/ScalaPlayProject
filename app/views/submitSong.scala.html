@@ -1,6 +1,28 @@
 @(form: Form[SongInfo])(implicit messagesProvider: MessagesProvider)
 
 @main("Submit CD") {
+
+
+    <style>
+            body {
+                background-color: lightblue;
+            }
+
+            h1 {
+                color: red;
+                margin-left: 100px;
+            }
+
+            div {
+                color: red;
+                margin-left: 100px;
+            }
+
+            button {
+                color: red;
+                margin-left: 100px;
+            }
+    </style>
     <div>
 
     @helper.form(routes.SongController.submitSong()) {
