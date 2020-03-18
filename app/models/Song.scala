@@ -4,7 +4,7 @@ import play.api.libs.json.OFormat
 
 case class Song(
                  name: String,
-                 artist: String,
+                 Artist: String,
                  genre : String,
                  feeds: List[Feed])
 
